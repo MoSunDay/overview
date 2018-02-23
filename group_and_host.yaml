@@ -1,0 +1,28 @@
+---
+# front start
+front:
+ - front-common
+ - front-customer
+
+front-common:
+ - ats-front-2
+ - ats-front-1
+ - ats-front-8
+
+front-customer:
+ - front-akk
+ - ats-front-utalk1
+ - ats-front-jiajie1
+ - ats-front-lingdian1
+ - ats-front-test1
+ - ats-front-rczx1
+ - ats-front-aipulian1
+
+front-akk:
+ - ats-front-akk52
+ - ats-front-akk53
+ - ats-front-akk54
+ - ats-front-akk55
+ - ats-front-akk56
+ - ats-front-akk57
+
