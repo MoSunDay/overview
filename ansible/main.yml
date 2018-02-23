@@ -1,0 +1,13 @@
+- name: copy /etc/init.d/overview_agent
+  sudo: yes
+  copy: src=overview_agent dest=/etc/init.d/ mode=0755
+  tags: overview_agent
+- name: mkdir home dir
+  file: dest=/xxx/overview/ mode=0755 state=directory
+  tags: mkdir_home
+- name: copy overview_agent.py
+  copy: src=overview_agent.py dest=/xxx/overview/
+  tags: overview_agent.py
+- name: run overview_agent
+  shell: "/etc/init.d/overview_agent start"
+  tags: run_overview_agent
